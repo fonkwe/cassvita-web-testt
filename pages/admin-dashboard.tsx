@@ -62,12 +62,12 @@ const AdminDashboard = () => {
   ];
   console.log("Login info :", user);
   return (
-    <div className="container ml-64 bg-slate-50">
+    <div className="container ml-64 w-full h-full bg-slate-100">
            <Header />
            <Barner />
            <Customer />
-           <section className="container bg-slate-100 h-screen">
-               <div className=" grid grid-cols-3 gap-2">
+           <section className="container bg-slate-100 h-full w-full mt-10 mr-10">
+               <div className=" grid grid-cols-3 gap-4">
                      {items &&
                        items.map((item: itemsTypes) => (
                     <Item
@@ -79,7 +79,7 @@ const AdminDashboard = () => {
                     />
                  ))}
               </div>
-              <div className="flex justify-center mt-10">
+              <div className="flex justify-center w-full mt-10">
                 <nav aria-label="Page navigation example">
                   <ul className="flex list-style-none">
                     <li className="page-item">
@@ -91,7 +91,7 @@ const AdminDashboard = () => {
                     </li>
                     <li className="page-item">
                       <a
-                        className="page-link relative block py-1.5 px-3 rounded-full bg-blue-500 border-0 bg-transparent outline-none transition-all duration-300  text-white hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                        className="page-link relative block py-1.5 px-3 rounded-full bg-blue-700 border-0 bg-transparent outline-none transition-all duration-300  text-white hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
                          href="#">1
                       </a>
                     </li>
@@ -282,10 +282,10 @@ const AdminDashboard = () => {
               Turn new navigation off
             </a>
           </div> */}
-              <div className="mt-auto mb-5 bottom-0">
-                 <p className="text-white font-bold">Need more Features?</p>
-                 <Image src="/image/download.jpeg" alt="" width={250} height={250} />
-                  <button className="bg-green-500 hover:bg-blue-700 w-full text-white font-bold py-2 px-4 border border-blue-700 rounded">
+              <div className="mx-auto">
+                 <p className="text-white font-bold mb-1">Need more Features?</p>
+                 <Image src="/image/download.jpeg" alt="" width={250} height={250} className="p-5" />
+                  <button className="mt-1 bg-green-500 hover:bg-blue-700 w-full text-white font-bold py-2 px-4 border border-blue-700 rounded">
                           Button
                   </button>
               </div>
